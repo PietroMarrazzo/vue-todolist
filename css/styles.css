@@ -7,8 +7,31 @@
 html, 
 body {
     height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
 }
-  
+
+/* UTILITIES */
+.p-absolute {
+    position: absolute;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* background  */
 .bg {
     background-image: url(../img/coffee.jpg);
     height: 100vh; 
@@ -16,3 +39,21 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+/* APP */
+#app {
+    background-color: rgb(83, 77, 74, .6);
+    width: 1200px;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: rgb(243, 243, 243);
+}
+
+
+/* TITLE */
+.title h2 {
+    text-align: center;
+}
+
+/* TEXT-BAR / SUBMIT BTN */
