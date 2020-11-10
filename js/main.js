@@ -9,7 +9,6 @@ const app = new Vue ({
             'Controllare offerte Black Friday',
         ],
         message: '',
-        full: 'true',
     },
 
     methods: {
