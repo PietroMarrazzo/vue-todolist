@@ -100,27 +100,28 @@ body {
 
 .container-app .todo {
     margin: 30px 50px;
-    width: 100%;
+    width: 80%;
 }
 
 .container-app .todo .todo-list {
-    width: 80%;
+    width: 100%;
 }
 
 .container-app .todo .todo-list li {
     justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 2px;
-    width: 80%;
-    border-top: 2px;
+    align-self: center;
+    margin-bottom: 5px;
+    /* width: 80%; */
     border-color: rgba(0, 0, 0, .7);
 }
 
 .container-app .todo .todo-list h3 {
-    text-align: start;
+    padding: 10px 0px;
+    align-self: center;
     font-size: 18px;
-    padding: 10px;
     width: 900px;
+    border-bottom: 1px solid #412d27;
+    
 }
 
 .container-app .todo .todo-list i {
@@ -133,5 +134,4 @@ body {
 .container-app .todo .todo-list i:hover {
     cursor: pointer;
     background-color: #8b5d4d;
-    transform: scale(1.1);
 }
