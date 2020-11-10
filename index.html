@@ -25,16 +25,16 @@
                 
                 <!-- inserimento -->
                 <div class="text-bar">
-                        <input type="text" placeholder="Tell me your objective" v-model="message"> 
+                        <input type="text" placeholder="Tell me your objective" v-model="message" v-on:keyup.enter="addTodo"> 
                         <button class="btn" @click="addTodo">Add it</button>
                 </div>
 
                 <!-- lista -->
                 <div class="todo">
                     <ul class="todo-list">
-                        <li v-for="objective in objectives" class="p-flex">
-                            <h3 class="p-flex">{{objective.obj}}</h3>
-                            <i class="fas fa-trash" @click="removeTodo()"></i>
+                        <li v-for="(objective, index) in objectives" class="p-flex">
+                            <h3 class="p-flex">{{objective}}</h3>
+                            <i class="fas fa-trash" @click="removeTodo(index)"></i>
                         </li>
                     </ul>
                 </div>

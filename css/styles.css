@@ -122,6 +122,7 @@ body {
     font-size: 18px;
     width: 900px;
     border-bottom: 1px solid #412d27;
+    text-transform: capitalize;
     
 }
 

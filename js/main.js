@@ -4,9 +4,9 @@ const app = new Vue ({
     data: {
         indexObj: 0,
         objectives: [
-            { obj: 'Fare la spesa' },
-            { obj: 'Chiamare nonna' },
-            { obj: 'Controllare offerte Black Friday' },
+            'Fare la spesa',
+            'Chiamare nonna',
+            'Controllare offerte Black Friday',
         ],
         message: '',
     },
@@ -14,12 +14,19 @@ const app = new Vue ({
     methods: {
         addTodo() {
             if (this.message != '') {
-                this.objectives.push(this.message);
-                this.message = '';
+                if (this.objectives.length < 11) {
+                    console.log(this.message);
+                    this.objectives.push(this.message);
+                    this.message = '';
+                }
+                else {
+                    alert('Forse dovresti pensare anche a riposare ;)');
+                }
             }
         },
         
-        removeTodo() {
+        removeTodo(index) {
+            this.objectives.splice(index, 1);
 
         },
     },
