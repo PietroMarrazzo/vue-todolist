@@ -32,9 +32,12 @@
                 <!-- lista -->
                 <div class="todo">
                     <ul class="todo-list">
-                        <li v-for="(objective, index) in objectives" class="p-flex">
+                        <li v-if="full" v-for="(objective, index) in objectives" class="p-flex">
                             <h3 class="p-flex">{{objective}}</h3>
                             <i class="fas fa-trash" @click="removeTodo(index)"></i>
+                        </li>
+                        <li v-else>
+                            <h3 class="p-flex">There is always something to do...</h3>
                         </li>
                     </ul>
                 </div>

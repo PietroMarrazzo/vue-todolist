@@ -9,6 +9,7 @@ const app = new Vue ({
             'Controllare offerte Black Friday',
         ],
         message: '',
+        full: 'true',
     },
 
     methods: {
@@ -27,7 +28,9 @@ const app = new Vue ({
         
         removeTodo(index) {
             this.objectives.splice(index, 1);
-
+            if (this.objectives.length < 2) {
+                this.full = 'false';
+            }
         },
     },
 
