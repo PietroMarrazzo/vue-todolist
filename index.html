@@ -16,7 +16,10 @@
                 <!-- titolo -->
                 <div class="title">
                     <h2>
-                        Enjoy your organized time 
+                        Have you got anything to do?
+                    </h2>
+                    <h2>
+                        Remember it down here.
                     </h2>
                 </div>
                 
@@ -31,16 +34,8 @@
                     <ul class="todo-list">
                         <li v-for="objective in objectives" class="p-flex">
                             <h3 class="p-flex">{{objective.obj}}</h3>
-                            <i class="fas fa-trash"></i>
+                            <i class="fas fa-trash" @click="removeTodo()"></i>
                         </li>
-                        <!-- <li class="p-flex">
-                            <h3>Guardare offerte BlackFriday</h3>
-                            <i class="fas fa-trash"></i>
-                        </li>
-                        <li class="p-flex">
-                            <h3>Chiamare nonna</h3>
-                            <i class="fas fa-trash"></i>
-                        </li> -->
                     </ul>
                 </div>
             </div>

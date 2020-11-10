@@ -60,19 +60,20 @@ body {
 
 /* TITLE */
 .title {
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 50px;
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
 }
 
 /* TEXT-BAR / SUBMIT BTN */
 .container-app .text-bar {
-    margin: 20px auto 20px;
+    margin: 30px 50px 20px;
 }
 
 .container-app .text-bar input {
-    width: 400px;
+    width: 80%;
     border-radius: 5px 0px 0px 5px;
     border: none;
     height: 30px;
