@@ -10,6 +10,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
 /* UTILITIES */
 .p-absolute {
     position: absolute;
@@ -31,29 +32,45 @@ body {
     flex-wrap: wrap;
 }
 
+
 /* background  */
-.bg {
+body {
     background-image: url(../img/coffee.jpg);
     height: 100vh; 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
 }
 
 
-/* APP */
-#app {
-    background-color: rgb(83, 77, 74, .6);
-    width: 1200px;
+.container-app {
+    background-color: rgb(83, 77, 74, .8);
+    width: 1000px;
     margin-top: 100px;
     margin-left: 100px;
+    border-radius: 20px;
+}
+
+/* APP */
+#app {
     color: rgb(243, 243, 243);
+    width: 100%;
 }
 
 
 /* TITLE */
-.title h2 {
-    text-align: center;
+.title {
+    margin: auto;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 /* TEXT-BAR / SUBMIT BTN */
+.container-app .text-bar {
+    margin: 20px auto 20px;
+}
+
+.container-app .text-bar input {
+    width: 400px;
+}
