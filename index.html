@@ -25,8 +25,8 @@
                 
                 <!-- inserimento -->
                 <div class="text-bar">
-                        <input type="text" placeholder="Tell me your objective"> 
-                        <button class="btn">Add it</button>
+                        <input type="text" placeholder="Tell me your objective" v-model="message"> 
+                        <button class="btn" @click="addTodo">Add it</button>
                 </div>
 
                 <!-- lista -->

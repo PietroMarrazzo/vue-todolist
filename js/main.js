@@ -7,12 +7,16 @@ const app = new Vue ({
             { obj: 'Fare la spesa' },
             { obj: 'Chiamare nonna' },
             { obj: 'Controllare offerte Black Friday' },
-        ]
+        ],
+        message: '',
     },
 
     methods: {
         addTodo() {
-            if ()
+            if (this.message != '') {
+                this.objectives.push(this.message);
+                this.message = '';
+            }
         },
         
         removeTodo() {
